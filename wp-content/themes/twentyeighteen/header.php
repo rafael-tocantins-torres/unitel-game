@@ -168,40 +168,32 @@
 				<?php
 				}
 				?>
-
 				<?php
-					
-					 
-
-				if( $slug == '' || $slug == 'listing-cat' || $slug == 'new-releases'){ 
+				if($slug !== 'tutorial' && $slug != 'product' && $slug !== 'category'){
 				?>
-
 				<!-- HEADER BOTTOM -->
 				<div class="header-btm-wrapper">
 					<nav class="rft-header-top">
+
+						<?php
+						
+						$nav = getWPMenu('top_mid_menu');
+						$menu_items = $nav->items;
+
+						?>
 						
 								<ul class="rft-nav-bottom">
+									<?php foreach($menu_items as $items){ ?>
 									<li class="rtf-nav-li">
-										<a class="rft-nav-link"> HOME</a>
+										<a href="<?php echo $items->url; ?>" class="rft-nav-link"><?php echo $items->attr_title; ?></a>
 									</li>
-									<li class="rtf-nav-li">
-										<a class="rft-nav-link">CATEGORY</a>
-									</li>
-									<li class="rtf-nav-li">
-										<a class="rft-nav-link">VIDEO</a>
-									</li>
-									<li class="rtf-nav-li">
-										<a class="rft-nav-link">PRODUCT</a>
-									</li>
-									<li class="rtf-nav-li">
-										<a class="rft-nav-link">NEW RELEASES</a>
-									</li>		
+									<?php } ?>		
 								</ul>
 						
 					</nav>
 				</div>
 				<!-- END OF HEADER BOTTOM -->
-
+				
 				<?php
 				}elseif($slug == 'category' || $slug == 'product'){
 				?>
@@ -223,7 +215,7 @@
 				
 				
 				<?php
-				}else{
+				}elseif($slug == "tutorial"){
 				?>
 
 				<div class="header-dtm-wrapper">

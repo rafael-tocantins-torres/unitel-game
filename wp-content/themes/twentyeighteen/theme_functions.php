@@ -61,7 +61,7 @@ register_nav_menus( array(
   'footer' 				=> 'Footer menu #1',
   'footer_user' 	=> 'Footer menu User',
   'mid_footer' 		=> 'Footer menu Links',
-  'nba_menu' 			=> 'NBA Top Menu'
+  'top_mid_menu' 			=> 'Mid Menu'
 ) );
 
 function request_webservice($url, $content, $method) {
