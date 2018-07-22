@@ -1,7 +1,12 @@
 body {
     position: relative;
     overflow-x: hidden;
+    font-family:Arial, Helvetica, sans-serif;
 }
+
+h1,h2,h3,h4,h5{font-family:Arial, Helvetica, sans-serif;}
+p{font-family:Arial, Helvetica, sans-serif;}
+a, span{font-family:Arial, Helvetica, sans-serif;}
 
 
 body,
