@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 
+<div class="section-category">
+
 <div class="section-available">
     <div class="container-fluid title-section-rft">
     <br>
@@ -120,5 +122,6 @@
     </div>
 </div> 
 
+</div>
 
 <?php get_footer(); ?>

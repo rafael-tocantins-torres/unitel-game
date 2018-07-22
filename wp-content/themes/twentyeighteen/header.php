@@ -51,7 +51,7 @@
 
 	?>
 
-	<div id="wrapper" style="background-color:<?php if( $slug == 'category' || $slug == 'product' || $slug == 'new-releases' ){ echo '#F0F0F0'; } ?>">
+	<div id="wrapper">
         <div class="overlay"></div>
 	
 		
