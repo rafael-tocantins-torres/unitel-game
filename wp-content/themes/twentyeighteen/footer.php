@@ -1,4 +1,16 @@
+
+
 <footer class="rft-footer">
+
+    <?php 
+    
+    $url = $_SERVER['REQUEST_URI'];
+					
+		$split_url = explode('/', $url);
+		$slug = $split_url[1];
+    
+    if($slug !== 'tutorial'){ ?>
+
     <div class="container-fluid">
         <div class="row">
             <div class="col-4 col-xs-4 col-sm-4">
@@ -14,6 +26,15 @@
         <div class="text-center">
             <p><?php echo 'copywright'; ?></p>
         </div>
+
+    <?php }else{ ?>
+
+
+        <div class="text-center link-home">
+            <a href="<?php echo get_home_url(); ?>">Continuar no Aplicativo</a>
+        </div>
+
+    <?php } ?>    
     </div>
 </footer>
 
@@ -53,6 +74,12 @@
             draggable: true,
             swipe:true,
             autoplay: true
+        });
+
+        $('#slider-three').slick({
+            dots:true,
+            arrows:false,
+            draggable: true
         });
     </script>
 	</body>

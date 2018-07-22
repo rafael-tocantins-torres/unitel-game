@@ -47,6 +47,7 @@ html { height: 100%;width:100%;}
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fc9e41', endColorstr='#ff5f00',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */}
     #preload-img{height: 120px;display:block;margin:0 auto;position:relative;top:40%;animation: loading 4s linear infinite;}
 
+.anim-up{animation:click 4s linear infinite;}    
 
 .fade-out{transition:.3s;}
     @keyframes loading{
@@ -64,6 +65,21 @@ html { height: 100%;width:100%;}
 
         75%{
             transform:scale(.7)
+        }
+    }
+
+    @keyframes click{
+        0%{
+            
+            transform:scale(1.2);
+        }
+
+        50%{
+            transform:scale(1);
+        }
+
+        100%{
+            transform:scale(1.2);
         }
     }
 
@@ -131,6 +147,12 @@ html { height: 100%;width:100%;}
     background: -webkit-radial-gradient(center, ellipse cover, #fc9e41 0%,#ff5f00 100%); /* Chrome10-25,Safari5.1-6 */
     background: radial-gradient(ellipse at center, #fc9e41 0%,#ff5f00 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fc9e41', endColorstr='#ff5f00',GradientType=1 ); transform:scale(0);}
+
+    .login-page{width:100%;height:100%;position:fixed;top:0;left:0;background: #fc9e41;transition:.3s; /* Old browsers */
+        background: -moz-radial-gradient(center, ellipse cover, #fc9e41 0%, #ff5f00 100%); /* FF3.6-15 */
+        background: -webkit-radial-gradient(center, ellipse cover, #fc9e41 0%,#ff5f00 100%); /* Chrome10-25,Safari5.1-6 */
+        background: radial-gradient(ellipse at center, #fc9e41 0%,#ff5f00 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fc9e41', endColorstr='#ff5f00',GradientType=1 );}
     
 
     .wrap
@@ -178,6 +200,64 @@ form.search input[type="text"], form.login input[type="password"]
     outline: 0;
 }
 
+form.login input[type="text"], form.login input[type="password"]
+{
+    width: 100%;
+    margin: 0;
+    padding: 5px 10px;
+    background: 0;
+    border: 0;
+    border-bottom: 1px solid #FFFFFF;
+    outline: 0;
+    font-style: italic;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    color: #FFFFFF;
+    outline: 0;
+}
+
+form.login input[type="number"], form.login input[type="password"]
+{
+    width: 100%;
+    margin: 0;
+    padding: 5px 10px;
+    background: 0;
+    border: 0;
+    border-bottom: 1px solid #FFFFFF;
+    outline: 0;
+    font-style: italic;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    color: #FFFFFF;
+    outline: 0;
+    text-align:center;
+}
+
+.pin form.login input[type="number"], form.login input[type="password"]
+{
+    width: 50%;
+    margin: 0;
+    padding: 5px 10px;
+    background: 0;
+    border: 0;
+    border-bottom: 1px solid #FFFFFF;
+    outline: 0;
+    font-style: italic;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    color: #FFFFFF;
+    outline: 0;
+    margin:0 auto;
+    display:block;
+    text-align:center;
+}
+
 form.search input[type="submit"]
 {
     width: 100%;
@@ -190,9 +270,31 @@ form.search input[type="submit"]
     letter-spacing: 1px;
     background-color:transparent;
     border-color:white;
+    color:white;
 }
 
+form.login input[type="submit"]
+{
+    width: 100%;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 16px;
+    outline: 0;
+    cursor: pointer;
+    letter-spacing: 1px;
+    background-color:transparent;
+    border-color:white;
+    color:white;
+}
+
+
 form.search input[type="submit"]:hover
+{
+    transition: background-color 0.5s ease;
+}
+
+form.login input[type="submit"]:hover
 {
     transition: background-color 0.5s ease;
 }
@@ -519,6 +621,8 @@ li.slick-active button{background-color:#FF5F00;}
 /*-------------------------------*/
 
 .rft-footer{background-color:#FF5F00;width:100%;color:white;}
+.rft-footer a{color:white;text-decoration: underline;text-transform:uppercase;}
+.link-home{padding:1em;}
 
 /*-------------------------------*/
 /* Sections  */
@@ -592,3 +696,23 @@ li.slick-active button{background-color:#FF5F00;}
 .section-slider-element{padding:1em 0;}
 .section-new-releases .slick-current{border:4px solid #FF5F00;} 
     
+
+
+/*-------------------------------*/
+/* section new-releases  */
+/*-------------------------------*/
+
+.error-msisdn{color:red;font-weight: bold;font-size:12px;padding:.3em .7em;border:red 1px solid;display:block;margin:0 auto;width: 150px;margin-top:.8em;}
+.error-pin{color:red;font-weight: bold;font-size:12px;padding:.3em .7em;border:red 1px solid;display:block;margin:0 auto;width: 150px;margin-top:.8em;}
+.wrong-pin{color:rgb(143, 2, 49);font-weight: bold;font-size:12px;padding:.3em .7em;border:rgb(143, 2, 49) 1px solid;display:block;margin:0 auto;width: 150px;margin-top:.8em;}
+.service-unavailable{color:rgb(1, 106, 148);font-weight: bold;font-size:12px;padding:.3em .7em;border:rgb(1, 106, 148) 1px solid;display:block;margin:0 auto;width: 150px;margin-top:.8em;}
+.d-none{display:none;}
+
+/*-------------------------------*/
+/* section new-releases  */
+/*-------------------------------*/
+
+.tutorial-title{margin-top:1.3em;}
+.tutorial-title h4{margin-bottom:.1em;color:#FF5F00;text-transform:uppercase;}
+.tutorial-title p{color:#5C0F8B;}
+.tutorial-image{padding:30px;}
