@@ -717,6 +717,7 @@ li.slick-active button{background-color:#FF5F00;}
 
 .error-msisdn{color:red;font-weight: bold;font-size:12px;padding:.3em .7em;border:red 1px solid;display:block;margin:0 auto;width: 150px;margin-top:.8em;}
 .error-pin{color:red;font-weight: bold;font-size:12px;padding:.3em .7em;border:red 1px solid;display:block;margin:0 auto;width: 150px;margin-top:.8em;}
+.wrong-msisdn{color:rgb(143, 2, 49);font-weight: bold;font-size:12px;padding:.3em .7em;border:rgb(143, 2, 49) 1px solid;display:block;margin:0 auto;width: 150px;margin-top:.8em;}
 .wrong-pin{color:rgb(143, 2, 49);font-weight: bold;font-size:12px;padding:.3em .7em;border:rgb(143, 2, 49) 1px solid;display:block;margin:0 auto;width: 150px;margin-top:.8em;}
 .service-unavailable{color:rgb(1, 106, 148);font-weight: bold;font-size:12px;padding:.3em .7em;border:rgb(1, 106, 148) 1px solid;display:block;margin:0 auto;width: 150px;margin-top:.8em;}
 .d-none{display:none;}
