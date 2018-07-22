@@ -41,6 +41,19 @@
             swipe:true,
             autoplay: true
         });
+
+        $('#slider-two').slick({
+            centerMode: true,
+            centerPadding: '0px',
+            variableWidth: true,
+            slidesToShow: 3,
+            dots: true,
+            slidesToShow:3,
+            arrows: false,
+            draggable: true,
+            swipe:true,
+            autoplay: true
+        });
     </script>
 	</body>
 </html>

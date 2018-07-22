@@ -73,6 +73,8 @@
     <div class="container-fluid title-section-rft">
         <!-- card product -->
         <div class="row">
+
+
             <div class="col-4 col-xs-4 col-sm-4 pl-1 pr-1 mb-2">
                     <div class="card-rft">
                         <div class="card-head-rft">
@@ -109,6 +111,9 @@
         </div>
     </div>
 </div>
+
+
+
                     </div>
                 </div>
             </div>
