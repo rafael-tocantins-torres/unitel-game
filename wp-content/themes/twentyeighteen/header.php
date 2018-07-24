@@ -139,9 +139,10 @@
 	<?php		
 		}else{
 	?>
-
+			
 		        <!-- Page Content -->
 				<div id="page-content-wrapper">
+					
 					<div class="container-fluid">
 						<div class="row clearfix">
 							<div class="col-2 col-xs-2 col-sm-2">
@@ -163,7 +164,7 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				
 
 				<?php
 				}
@@ -191,6 +192,8 @@
 								</ul>
 						
 					</nav>
+					
+				</div>
 				</div>
 				<!-- END OF HEADER BOTTOM -->
 				
@@ -230,3 +233,5 @@
 				<?php
 				}
 				?>
+
+			</div>
